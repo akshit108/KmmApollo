@@ -1,0 +1,2 @@
+com/akshit/kmmapollo/shared/BuildConfig.java
+ com.akshit.kmmapollo.shared.BuildConfig

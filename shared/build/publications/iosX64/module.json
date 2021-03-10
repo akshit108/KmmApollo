@@ -1,0 +1,134 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../shared/1.0.0/shared-1.0.0.module",
+    "group": "com.akshit.kmm.apollo",
+    "module": "shared",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5",
+      "buildId": "bnmq2flaizeg3a2bv4qc472qdy"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosX64-api",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "strictly": "1.4.2-native-mt",
+            "requires": "1.4.2-native-mt"
+          }
+        },
+        {
+          "group": "com.apollographql.apollo",
+          "module": "apollo-runtime-kotlin",
+          "version": {
+            "requires": "2.5.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shared.klib",
+          "url": "shared-iosx64-1.0.0.klib",
+          "size": 133306,
+          "sha512": "33ba65044a5c75143505ad44f14d856d9b3325ab66bdb0c7a4366cd7b6819b476bc53032c4854f9d4009340b9f3657753703a1e38e2dd271f0014c3f46a8654a",
+          "sha256": "ed755ef054655a3b63c1074d46976558d947f197568d3fa64f7096cf89c2e1b6",
+          "sha1": "f2f21bce2e29a8e2b17120a5e3f843dd027f2d1d",
+          "md5": "cf71db5c3d9a9207550e16d514851c5c"
+        }
+      ]
+    },
+    {
+      "name": "iosX64-iosX64MetadataElements",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "strictly": "1.4.2-native-mt",
+            "requires": "1.4.2-native-mt"
+          }
+        },
+        {
+          "group": "com.apollographql.apollo",
+          "module": "apollo-runtime-kotlin",
+          "version": {
+            "requires": "2.5.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shared-iosx64-1.0.0-metadata.jar",
+          "url": "shared-iosx64-1.0.0-metadata.jar",
+          "size": 5028,
+          "sha512": "151a1ac6cc8676ee756d31d473dc2e96362e17d47127f17b5ccfbd6984aeb92cbdddde924ca05fcd4a29bcbeaadf10691a985efb84a9742b671eddc5715ea6b5",
+          "sha256": "94623d9eb737b70c16e033ce634799aa997da6d813254bb1bc5021f268c5d7ce",
+          "sha1": "d42f47eba09c003f82a10e1b03bf3366884ed438",
+          "md5": "b295c751309b3f7641c972b9c16339b2"
+        }
+      ]
+    },
+    {
+      "name": "metadata-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../shared-metadata/1.0.0/shared-metadata-1.0.0.module",
+        "group": "com.akshit.kmm.apollo",
+        "module": "shared-metadata",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "name": "metadata-commonMainMetadataElements",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../shared-metadata/1.0.0/shared-metadata-1.0.0.module",
+        "group": "com.akshit.kmm.apollo",
+        "module": "shared-metadata",
+        "version": "1.0.0"
+      }
+    }
+  ]
+}

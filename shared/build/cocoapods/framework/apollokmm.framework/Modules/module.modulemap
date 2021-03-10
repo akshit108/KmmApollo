@@ -1,0 +1,6 @@
+framework module apollokmm {
+  umbrella header "dummy.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,89 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../shared/1.0.0/shared-1.0.0.module",
+    "group": "com.akshit.kmm.apollo",
+    "module": "shared",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5",
+      "buildId": "bnmq2flaizeg3a2bv4qc472qdy"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadata-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "strictly": "1.4.2-native-mt",
+            "requires": "1.4.2-native-mt"
+          }
+        },
+        {
+          "group": "com.apollographql.apollo",
+          "module": "apollo-runtime-kotlin",
+          "version": {
+            "requires": "2.5.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shared-metadata-1.0.0-all.jar",
+          "url": "shared-metadata-1.0.0-all.jar",
+          "size": 10155,
+          "sha512": "cba2ac143c23f717a8272facc1214c3a3c68d5f6f174c41c9eb07872963be364377db027515c5b309eae16b6ebff91fe33b05be467d1fa58708be423667388d2",
+          "sha256": "af0cac5c24598915efd8431de477398d87451f03b3ac8cc79418ded1107fdc24",
+          "sha1": "f498d72035d846f5a5d52776092ef4abae63777e",
+          "md5": "12c5db85c1b360bdedcd81b58f2a6eae"
+        }
+      ]
+    },
+    {
+      "name": "metadata-commonMainMetadataElements",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shared-metadata-1.0.0.jar",
+          "url": "shared-metadata-1.0.0.jar",
+          "size": 7685,
+          "sha512": "94b6a48af27516498c98ab68d62512193c1f24747477082a8606d4d025f0ca2f0687c1674675946729533439517117b30264b1b2abeb36db10df8611f9c5b29e",
+          "sha256": "8f00916dbce5428b09d9976d8318e4e72b7f89e563f172dad520ee45f3fca1a2",
+          "sha1": "5124ba4a72a4fc7efda24153ef9a6388888bdf2d",
+          "md5": "5aae653429fdd3582df469736b6cd5ef"
+        }
+      ]
+    }
+  ]
+}

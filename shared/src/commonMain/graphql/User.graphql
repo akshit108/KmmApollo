@@ -1,0 +1,181 @@
+query User($id: String!){
+    user(id: $id){
+        id,
+        salutation,
+        academicTitle,
+        firstname,
+        lastname,
+        isProfileComplete,
+        hasEmploymentDetails,
+        email,
+        phone,
+        crcReferralCode,
+        numberOfReferrals,
+        referralSavings,
+        birthdate,
+        isPerson,
+        employmentType,
+        canCompleteProfile,
+        hasPersonalData,
+        hasProofOfOtherIncome,
+        hasBankDetails,
+        hasDriversLicense,
+        hasProofOfIncome,
+        hasIdentityProof,
+        identityProof {
+            result
+        },
+        hasSelfDisclosure,
+        selfDisclosure {
+            hasPermanentContract
+            employedUntil
+            employedSince
+            incomeNet
+            incomeOther
+        },
+        newsletterSubscribed,
+        hasScoring,
+        scoring {
+            result
+        },
+        mailingAddress {
+            street,
+            postalCode,
+            city,
+            country
+        },
+        bankDetails {
+            alternateBankingAccountHolder,
+            iban,
+            bic
+        },
+        deals {
+            id,
+            status,
+            subStatus,
+            lostReasonDetail,
+            desiredDateOfDelivery,
+            monthlyRate,
+            startingFee,
+            deliveryFee,
+            infoboxText,
+            minimumAge,
+            voucher {
+                code,
+                discount {
+                    amountOff,
+                    newRate,
+                    type
+                },
+                units,
+                campaignId
+            },
+            minimumDuration,
+            bookableOptions,
+            isSigned,
+            handoverContent {
+                content {
+                    id,
+                    headline,
+                    body
+                },
+                active {
+                    id
+                }
+            },
+            desiredHandoverAddress {
+                street,
+                postalCode,
+                city,
+                country
+            },
+            handoverType,
+            handoverDate,
+            handoverAddress {
+                dealerName,
+                street,
+                postalCode,
+                city,
+                country
+            },
+            offer {
+                id,
+                isAvailable,
+                make,
+                model,
+                version,
+                teaserImage,
+                startingFee,
+                portfolio,
+                equipmentList,
+                ps,
+                kw,
+                drive,
+                fuelType,
+                gearingType,
+                earliestAvailabilityDays,
+                annualKm,
+                excessKmFee,
+                excessMonthlyKm,
+                partialDeductible,
+                fullyDeductable,
+                estimatedDeliveryTime
+            },
+            date,
+            bookings {
+                id,
+                status,
+                startDate,
+                endDate,
+                billingStartDate,
+                billingEndDate,
+                kmDriven,
+                includedMonthlyKilometers,
+                typeOfDelivery,
+                estimatedDeliveryDate,
+                placeOfDelivery,
+                typeOfReturn,
+                dateOfReturn,
+                placeOfReturn,
+                pricePerExcessKilometerGross,
+                handoverKilometers,
+                handoverCertificate,
+                monthlyRate,
+                minimumAge,
+                vehicle {
+                    id,
+                    licensePlate,
+                    make,
+                    model,
+                    version,
+                    ps,
+                    kw,
+                    drive,
+                    fuelType,
+                    gearingType,
+                    carImage,
+                    manuals,
+                    exteriorColor
+                },
+                damageReports {
+                    id,
+                    createdAt,
+                    updatedAt,
+                    needsSecondStep,
+                    serializedData {
+                        id
+                        value
+                        labels {
+                            en
+                            de
+                        },
+                        type,
+                        options,
+                        sequenceNumber
+                    }
+                }
+            }
+        },
+        errors
+    }
+}

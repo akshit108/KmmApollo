@@ -1,0 +1,134 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../shared/1.0.0/shared-1.0.0.module",
+    "group": "com.akshit.kmm.apollo",
+    "module": "shared",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5",
+      "buildId": "bnmq2flaizeg3a2bv4qc472qdy"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosArm64-api",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "strictly": "1.4.2-native-mt",
+            "requires": "1.4.2-native-mt"
+          }
+        },
+        {
+          "group": "com.apollographql.apollo",
+          "module": "apollo-runtime-kotlin",
+          "version": {
+            "requires": "2.5.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shared.klib",
+          "url": "shared-iosarm64-1.0.0.klib",
+          "size": 133324,
+          "sha512": "478a3f7e562305c36b7ce459530547ac7f5415dab5c03a056cdc875e58a9da3470982e84ce15b81eeae06c71179acfcc10af6ac06314940eb7a7a87d8efab418",
+          "sha256": "d04951aaac8b568df504049403574dffa4fbd9b85ea6d85213fd59fe07c25e02",
+          "sha1": "d66af48fe29ae0c520870968192289854d18a2e7",
+          "md5": "b11ad28651b92923ab263d64761e0472"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64-iosArm64MetadataElements",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "strictly": "1.4.2-native-mt",
+            "requires": "1.4.2-native-mt"
+          }
+        },
+        {
+          "group": "com.apollographql.apollo",
+          "module": "apollo-runtime-kotlin",
+          "version": {
+            "requires": "2.5.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shared-iosarm64-1.0.0-metadata.jar",
+          "url": "shared-iosarm64-1.0.0-metadata.jar",
+          "size": 5028,
+          "sha512": "a20cfe72e1b77d72bf928f8dda9411558a97ae15d696cd646706f31ae3dcc6988b4da2e475cfeaa84705fae7fccd0e5b7716a0454465e9625ab8aeb66d237da7",
+          "sha256": "ae28193d4f0935a5a228be158b675f5088b595e3ef5f260f1a946ba5791af3e1",
+          "sha1": "04e6ac957c995ca5cee65f22603dfe1349b70863",
+          "md5": "a82237f7e4b21a332242fe3c5a6f0051"
+        }
+      ]
+    },
+    {
+      "name": "metadata-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../shared-metadata/1.0.0/shared-metadata-1.0.0.module",
+        "group": "com.akshit.kmm.apollo",
+        "module": "shared-metadata",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "name": "metadata-commonMainMetadataElements",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../shared-metadata/1.0.0/shared-metadata-1.0.0.module",
+        "group": "com.akshit.kmm.apollo",
+        "module": "shared-metadata",
+        "version": "1.0.0"
+      }
+    }
+  ]
+}

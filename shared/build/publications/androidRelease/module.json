@@ -1,0 +1,140 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../shared/1.0.0/shared-1.0.0.module",
+    "group": "com.akshit.kmm.apollo",
+    "module": "shared",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5",
+      "buildId": "bnmq2flaizeg3a2bv4qc472qdy"
+    }
+  },
+  "variants": [
+    {
+      "name": "android-releaseApiElements",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "release",
+        "com.android.build.api.attributes.VariantAttr": "release",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shared-release.aar",
+          "url": "shared-android-1.0.0.aar",
+          "size": 229333,
+          "sha512": "28fa9f86adf61c96c034e8fd77b1b6fd03ab8db28db8651c53cad7671538539fddae26bb8b38dcccc93f2b1fbb4a334dc3fe46e62e0d1b2d4bea2b3eb38d334c",
+          "sha256": "d62b601fdf619384e155bec91d9acd3546784d649682559984ec95931504d7b7",
+          "sha1": "2bf8b560bd4311ec94d159341ea2a20bbbc0b356",
+          "md5": "ca297831a591ca6ef617667a2020ebee"
+        }
+      ]
+    },
+    {
+      "name": "android-releaseRuntimeElements",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "release",
+        "com.android.build.api.attributes.VariantAttr": "release",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "strictly": "1.4.2-native-mt",
+            "requires": "1.4.2-native-mt"
+          }
+        },
+        {
+          "group": "com.apollographql.apollo",
+          "module": "apollo-runtime-kotlin",
+          "version": {
+            "requires": "2.5.4"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.2.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shared-release.aar",
+          "url": "shared-android-1.0.0.aar",
+          "size": 229333,
+          "sha512": "28fa9f86adf61c96c034e8fd77b1b6fd03ab8db28db8651c53cad7671538539fddae26bb8b38dcccc93f2b1fbb4a334dc3fe46e62e0d1b2d4bea2b3eb38d334c",
+          "sha256": "d62b601fdf619384e155bec91d9acd3546784d649682559984ec95931504d7b7",
+          "sha1": "2bf8b560bd4311ec94d159341ea2a20bbbc0b356",
+          "md5": "ca297831a591ca6ef617667a2020ebee"
+        }
+      ]
+    },
+    {
+      "name": "metadata-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../shared-metadata/1.0.0/shared-metadata-1.0.0.module",
+        "group": "com.akshit.kmm.apollo",
+        "module": "shared-metadata",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "name": "metadata-commonMainMetadataElements",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../shared-metadata/1.0.0/shared-metadata-1.0.0.module",
+        "group": "com.akshit.kmm.apollo",
+        "module": "shared-metadata",
+        "version": "1.0.0"
+      }
+    }
+  ]
+}

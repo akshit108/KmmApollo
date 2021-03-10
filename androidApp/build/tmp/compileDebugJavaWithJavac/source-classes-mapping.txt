@@ -1,0 +1,2 @@
+com/akshit/kmmapollo/androidApp/BuildConfig.java
+ com.akshit.kmmapollo.androidApp.BuildConfig
